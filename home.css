@@ -2,14 +2,14 @@
 .first{
     height: 180px;
     width: auto;
-    background-color: blue;
+    background-color: yellow;
     margin-top: 40px;
 }
 
 .second{
     height: 30px;
     width: 190px;
-    background-color: blue;
+    background-color: yellow;
     margin-left: 700px;
     padding-top: 40px;
     
@@ -27,8 +27,8 @@
 }
 
 img{
-    height: 250px;
-    width: 250px;
+    height: 320px;
+    width: 300px;
     margin-left: 6px;
     margin-top: 10px;
     margin-right: 60px;
@@ -37,8 +37,9 @@ img{
 button{
     width: 150px;
     height: 35px;
-    background-color: orangered;
-    color: white;
+    background-color: yellow;
+    color: black;
+    margin-bottom: 10px;
 }
 
 h1{
@@ -62,9 +63,38 @@ h1{
 .home5{
     display: flex;
     flex-direction: row;
+    margin-left: 150px;
 }
 
 .b1{
     width: 80px;
     height: 25px;
+}
+
+h3{
+    padding-right: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 34px;
+}
+
+@media screen and (max-width:800px){
+    .home3{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+    }
+    .home1{
+        display: flex;
+        flex-direction: column;
+    }
+    .home4{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:600px){
+    .home3{
+        justify-content: center;
+    }
 }
